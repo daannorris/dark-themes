@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name           Dark WhatsApp
 @namespace      github.com/daannorris/dark-themes
-@version        1.0.0
+@version        1.0.1
 @description    Better dark theme for WhatsApp with Compact mode
 @author         @daannorris
+@homepageURL    https://github.com/daannorris/dark-themes
+@updateURL      https://raw.githubusercontent.com/daannorris/dark-themes/master/whatsapp-dark.user.css
 ==/UserStyle== */
 
 @-moz-document domain("web.whatsapp.com") {
@@ -255,6 +257,7 @@
     ._16y6t,
     ._3LL06,
     .cFkAx,
+    ._3XrHh,
     ._2Mvo8.fyJXn,
     ._3zb-j strong,
     ._3_7SH {
