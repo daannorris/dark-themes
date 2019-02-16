@@ -9,3 +9,7 @@ Dark themes for sites that I use, feel free to use them or raise issues if you f
 - Full screen mode
 - Hidden images for privacy
 - Automatic updates
+
+## Feedly Dark
+
+📦 [Install] (https://raw.githubusercontent.com/daannorris/dark-themes/master/feedly-dark.user.css)
