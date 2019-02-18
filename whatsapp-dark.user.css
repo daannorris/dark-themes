@@ -1,13 +1,12 @@
 /* ==UserStyle==
 @name           Dark WhatsApp
 @namespace      github.com/daannorris/dark-themes
-@version        1.0.1
+@version        1.0.2
 @description    Better dark theme for WhatsApp with Compact mode
 @author         @daannorris
 @homepageURL    https://github.com/daannorris/dark-themes
 @updateURL      https://raw.githubusercontent.com/daannorris/dark-themes/master/whatsapp-dark.user.css
 ==/UserStyle== */
-
 @-moz-document domain("web.whatsapp.com") {
     :root {
         --background-main: #1e1e1e;
@@ -128,6 +127,10 @@
             opacity: .7;
             padding-right: 100%;
         }
+
+        ._2dA13 {
+            min-width: 0;
+        }
     }
 
     ._3dqpi {
@@ -155,6 +158,8 @@
     #startup,
     #initial_startup,
     .jN-F5,
+    .gQzdc,
+    .YAPQk,
     ._1CnF3,
     ._1FKgS,
     ._3dqpi,
@@ -188,9 +193,9 @@
     ._2vjPO,
     ._2FsQ8,
     ._3D9Wd,
-    ._3XpR2,
-    .gQzdc,
-    .YAPQk,
+    .rstyJ,
+    ._3SX5f,
+    ._3XpR2 ._1RQfk,
     ._2y17h,
     ._2-IeP._1iei9 {
         background-color: var(--background-main) !important;
@@ -331,6 +336,8 @@
     }
 
     /* Set fake border top */
+    
+    .rstyJ,
     ._3XpR2,
     ._3pkkz,
     ._3Seam,
@@ -366,7 +373,7 @@
         outline: 0 none !important;
     }
 
-    ._1CRb5 {
+    ._1CRb5, ._2bdRS, .EebcE {
         margin: 0 !important;
     }
 
@@ -376,12 +383,15 @@
         border: 1px solid var(--border-main) !important;
     }
 
-    ._1iJeo {
+    ._1iJeo, ._2bdRS, .EebcE {
         border-radius: 0 !important;
     }
 
     /* Icons */
     span[data-icon=settings-blocked] path,
+    ._1VfKB span[data-icon=status-check] path,
+    ._1VfKB span[data-icon=status-dblcheck] path,
+    ._3FwEk path,
     .rrzlm path,
     .PNqfx path,
     ._3QWKD path,
@@ -393,6 +403,7 @@
     ._2SbJ1 path,
     .ory3u path,
     ._3kN0h path,
+    ._3SX5f path,
     ._3ZW2E svg > g path:first-child,
     .rAUz7 svg > path:first-child {
         fill: var(--color-secondary) !important;
@@ -443,7 +454,6 @@
         content: 'IMG';
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.35);
-        ;
         z-index: 10000000000;
         align-items: center;
         justify-content: center;
