@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name           Dark Feedly
+@name           Dark WhatsApp
 @namespace      github.com/daannorris/dark-themes
-@version        1.0.0
-@description    Better dark theme for Feedly
+@version        1.0.3
+@description    Better dark theme for WhatsApp with Compact mode
 @author         @daannorris
 @homepageURL    https://github.com/daannorris/dark-themes
-@updateURL      https://raw.githubusercontent.com/daannorris/dark-themes/master/feedly-dark.user.css
+@updateURL      https://raw.githubusercontent.com/daannorris/dark-themes/master/whatsapp-dark.user.css
 ==/UserStyle== */
-@-moz-document domain("feedly.com") {
+@-moz-document domain("web.whatsapp.com") {
     :root {
         --background-main: #1e1e1e;
         --background-hover: #292929;
@@ -15,200 +15,467 @@
         --border-main: #353535;
         --color-main: #cecece;
         --color-secondary: rgba(255, 255, 255, .6);
-        --color-feedly: #2bb24c;
+        --color-wa: #128c7e;
     }
 
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, .3);
+        border-radius: 10px;
+    }
+
+    /* Remove Shadows */
+    ._2-IeP,
+    ._2uLFU,
+    ._298R6,
+    ._3_7SH,
+    ._1qi0v:hover {
+        box-shadow: 0 0 !important;
+    }
+
+    /* Remove Text Shadows */
+    .Zq3Mc {
+        text-shadow: 0 0 !important;
+    }
+
+    /* Compact Mode */
+    @media screen and (max-width: 800px) {
+        ._3dqpi {
+            min-height: auto;
+        }
+
+        .app > ._3q4NP.k1feT {
+            overflow: visible !important;
+            position: absolute !important;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .MZIyP {
+            z-index: initial;
+        }
+
+        .MZIyP > .k1feT {
+            flex: 0 0 100% !important;
+            z-index: 1500;
+        }
+
+        ._1Iexl {
+            margin-left: 72px;
+            box-sizing: border-box;
+        }
+
+        .app ._1Iexl {
+            flex-grow: 1;
+        }
+
+        .app ._2yeJ5 {
+            left: 72px !important;
+            right: 0 !important;
+            width: auto;
+            z-index: 100;
+        }
+
+        ._15G96 {
+            position: absolute;
+            right: 6px;
+            bottom: 5px;
+            z-index: 100;
+        }
+
+        ._3CPl4 {
+            display: none;
+        }
+
+        ._3auIg,
+        ._3auIg ._3Kxus > span {
+            height: auto;
+            flex-direction: column;
+        }
+
+        ._3auIg ._2umId {
+            margin-bottom: 8px;
+        }
+
+        ._3auIg ._3Kxus .rAUz7 {
+            margin: 0 !important;
+        }
+
+        ._3auIg .K_Wx2 {
+            top: -4px !important;
+            left: 56px;
+            right: auto !important;
+            transform-origin: left top !important;
+        }
+
+        ._3dqpi {
+            min-width: auto !important;
+        }
+
+        .m6ZEb {
+            top: 59px;
+            left: 100%;
+            margin-left: 1px;
+            position: absolute;
+            width: calc(100vw - 73px);
+            z-index: 1000;
+            opacity: .7;
+            padding-right: 100%;
+        }
+
+        ._2dA13 {
+            min-width: 0;
+        }
+    }
+
+    ._3dqpi {
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+    }
+
+    ._2Uo0Z,
+    ._3YwRO,
+    ._1FKgS::after,
+    .gQzdc:after,
+    ._3AwwN:after,
+    ._3qlW9:after,
+    .tail-container,
+    ._1CkkN:hover + ._1CkkN:before {
+        display: none;
+    }
+
+    ._2XiC1 {
+        background-color: transparent !important;
+    }
+
+    /* Set background color primary */
     body,
-    #feedlyPageHolderFX,
-    #feedlyTabsHolder,
-    .fx .landing .background-gray,
-    .landing .section-features,
-    .fx .list-people.background-accent,
-    .fx.popover,
-    .fx .popover,
-    #searchBarFX,
-    #headerBarFX header,
-    .fixed-bar,
-    #feedlyTabs,
-    .dark #addContentPlaceholderFX button.onboarded,
-    .entryholder,
-    .headerInfo,
-    .headerInfo-expanded,
-    .fx .organize--toolbar.sticky,
-    .fx .form.hercule-search input[type="text"],
-    .fx .form [type='text'],
-    .fx .organize--cell-actions,
-    .fx.fx.fx .ui-Checkbox--label::before,
-    .fx.fx.fx .ui-Checkbox--input:indeterminate + .ui-Checkbox--label::before {
+    #startup,
+    #initial_startup,
+    .jN-F5,
+    .gQzdc,
+    .YAPQk,
+    .rstyJ,
+    ._1CnF3,
+    ._1FKgS,
+    ._3dqpi,
+    ._1GX8_,
+    ._66JgU,
+    ._3qlW9,
+    ._3AwwN,
+    ._1CSx9,
+    ._1CRb5,
+    ._2fq0t,
+    ._2EXPL,
+    ._1CkkN,
+    ._2uLFU,
+    ._3pkkz,
+    ._3auIg,
+    ._1XwnX,
+    ._3CPl4,
+    ._2MSJr,
+    ._1NrpZ,
+    ._1FroB,
+    ._3b2Cf,
+    ._1Plpp,
+    ._1WliW,
+    ._1AKfk,
+    ._1qUma,
+    ._3tlsa,
+    ._2rR_l,
+    ._1lIXT,
+    ._2HBs4,
+    ._2z7kg,
+    ._2vjPO,
+    ._2FsQ8,
+    ._3D9Wd,
+    ._3SX5f,
+    ._3XpR2 ._1RQfk,
+    ._2y17h,
+    .TYhk9,
+    ._2-IeP._1iei9 {
         background-color: var(--background-main) !important;
     }
 
-    .input-text,
-    .fx .form .fx-input .clear-input,
-    .jxtrRS:hover,
-    .fx .entry.u0:hover,
-    .dark #feedlyTabsHolder .header:hover,
-    .dark .tab .feedIndex:hover,
-    .headerInfo-expanded section:hover,
-    .fx .menu .item:hover,
-    .fx .menu .item.active,
-    .fx .menu .board-tag:hover .item.delete-tag,
-    .fx .board-tag:hover .menu .item.delete-tag,
-    .fx .header .button-icon-only:hover, .fx .header .AllPage__page-button:hover{
+    /* Set background color secondary */
+    ._14b5J,
+    .zl5TR,
+    ._28zBA._14ou2,
+    ._2EXPL:hover,
+    ._2EXPL._3df_h,
+    ._1sGGp._2nFG1,
+    ._1qi0v:hover {
         background-color: var(--background-hover) !important;
     }
 
-    .dark #feedlyTabsHolder .header.selected,
-    .dark #feedlyTabsHolder .header.selected:hover {
+    /* Set background color active */
+    progress,
+    .message-in,
+    .message-out,
+    .Zq3Mc,
+    ._298R6,
+    ._2-IeP,
+    ._3S8Q-,
+    ._1sB6s,
+    .rAUz7._31byH,
+    .rAUz7._3TbsN,
+    ._2EXPL._1f1zm {
         background-color: var(--background-active) !important;
     }
 
-    .fx .organize .selected .organize--cell-actions,
-    .fx .organize--cell-actions {
-        background-image: linear-gradient(90deg, var(--background-main), var(--background-main) 14px);
+    /* Set background color principal */
+    ._1FroB,
+    ._1VD7W {
+        background-color: var(--color-wa) !important;
     }
 
-    body,
-    h2,
-    .fx h1,
-    .fx h2,
-    h2.fx,
-    .fx-h2,
-    .fx .item-header,
-    .fx-item-header,
-    .fx .button.secondary,
-    .fx button.secondary,
-    .fx-button.secondary,
-    .fx .form.hercule-search input[type="text"],
-    .fx .form [type='text'],
-    .input-text,
-    .fx .menu .item,
-    .jxtrRS,
-    #feedlyBanner,
-    .fx .entry.unread .title,
-    .dark #addContentPlaceholderFX button.onboarded,
-    .dark #feedlyTabsHolder .nonEmpty,
-    .inlineFrame .title.read,
-    .headerInfo-expanded section,
-    .fx .mark-as-read-button span,
-    .fx p,
-    .fx .feed-preview ul,
-    .fx-p,
-    .entryBody,
-    .entryBody h4,
-    .fx .organize--toolbar-selection,
-    .fx .form .field label:not(.ButtonToggle),
-    .fx .form .field .label,
-    .fx .picker .item-header,
-    .fx table th {
+    /* Set background color translucent */
+    ._3_R6X,
+    ._3gUiM {
+        background-color: rgba(30, 30, 30, .9) !important;
+    }
+
+    ._14b5J {
+        background-color: #474226 !important;
+    }
+
+    /* Set background color gradient */
+    ._1i1U7.jZ4tp,
+    ._1i1U7._2DNgV {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(53, 53, 53, .5) 50%) !important;
+    }
+
+    /* Set font color primary */
+    select,
+    .message-out a,
+    .AhLfF,
+    .jN-F5,
+    .iHhHL,
+    .iYPsH,
+    .GclUX,
+    .cFkAx,
+    .TYhk9,
+    ._2Qffr,
+    ._16RnB,
+    ._2zCDG,
+    ._1CSx9 .Ghmsz,
+    ._3ataZ,
+    ._25Ooe,
+    ._2S1VP,
+    ._14b5J,
+    ._3zVOv,
+    ._16y6t,
+    ._3LL06,
+    ._3XrHh,
+    ._3_7SH,
+    ._1sB6s,
+    ._3gkvk,
+    ._2U5s1,
+    ._2Mvo8.fyJXn,
+    ._3zb-j strong {
         color: var(--color-main) !important;
     }
 
-    .fx h1 .sub,
-    .fx h2 .sub,
-    h2.fx .sub,
-    .fx-h2 .sub,
-    .fx .kicker,
-    .fx .feature .description,
-    .fx .entry.u0 .source,
-    .dark #feedlyTabsHolder .empty,
-    .metadata,
-    .fx a {
+    /* Set font color secondary */
+    .Y9G3K,
+    .KKFom,
+    .Cpiae,
+    ._1ClcF,
+    ._3cK8a,
+    ._1AwDx,
+    ._3Bxar,
+    ._2dGjP,
+    ._1upWv,
+    ._1DZAH,
+    ._3F6QL ._39LWd,
+    ._1pCYj,
+    ._2cLHw,
+    ._2Mvo8,
+    ._3Ztfl,
+    ._3lLzD,
+    ._1S4i5,
+    ._15aTv,
+    ._2XiC1,
+    ._3QqKs,
+    .bMKum,
+    ._3WZoe,
+    ._2IkcY,
+    html[dir=ltr] ._3Ye_R,
+    .Gd51Q._3sgkv {
         color: var(--color-secondary) !important;
     }
 
-    .input-text,
-    .button.secondary,
-    .fx .button.secondary,
-    .fx button.secondary,
-    .fx-button.secondary,
-    .fx .form.hercule-search input[type="text"],
-    .fx.fx.fx .ui-Checkbox--label::before,
-    .fx .form [type='text'],
-    .fx.fx .mark-as-read-button-group .button-dropdown,
-    .menu-custom > div:not(:first-child),
-    .dark #addContentPlaceholderFX button.onboarded,
-    .fx .inlineFrame.selected,
-    .fx .entry.u0,
-    .headerInfo,
-    .headerInfo-expanded section,
-    .pinContainer img,
-    .fx table,
-    .fx table th,
-    .fx table tr td {
+    /* Set border color for fake borders */
+    ._3zFlu {
+        background-color: var(--border-main) !important;
+    }
+
+    /* Set border color */
+    select,
+    html[dir=ltr] .UPNDG:hover:not(._1xQmx),
+    ._3X-3K hr,
+    ._14oqx + ._14oqx .DcItJ,
+    ._3j7s9,
+    ._3_3Rs,
+    ._3AwwN,
+    ._3qlW9,
+    ._2nmDZ,
+    ._2yeJ5,
+    ._3AwwN,
+    ._3pkkz,
+    ._3Qh77,
+    ._1xQmx,
+    ._2nmDZ,
+    ._1JbDr,
+    ._2EXPL._1f1zm:after,
+    ._2EXPL:hover:after,
+    ._2EXPL._3df_h:after,
+    ._2EXPL._1f1zm:after {
         border-color: var(--border-main) !important;
         outline-color: var(--border-main) !important;
     }
 
-    #searchBarFX,
-    #headerBarFX header,
-    .fx .organize--toolbar.sticky {
-        box-shadow: inset 0 -1px var(--border-main) !important;
+    .me9CP {
+        border-color: var(--color-main) !important;
     }
 
-    #feedlyPageHolderFX {
+    /* Set interactive border color */
+    ._1VD7W {
+        border-color: var(--color-wa) !important;
+    }
+
+    /* Set fake border top */
+    .rstyJ,
+    ._3XpR2,
+    ._3pkkz,
+    ._3Seam,
+    ._33zGE,
+    .GclUX {
+        box-shadow: inset 0 1px var(--border-main) !important;
+    }
+
+    ._2XiC1 {
         box-shadow: inset 1px 0 var(--border-main) !important;
     }
 
-    #searchBarFX,
-    #headerBarFX header {
-        border-left: 1px solid var(--border-main) !important;
+    /* Set fake border bottom */
+    ._3CPl4,
+    ._3b2Cf,
+    ._1CkkN,
+    ._1CRb5,
+    ._3auIg,
+    ._3AwwN,
+    ._2rR_l,
+    ._1qUma,
+    ._1XwnX,
+    .gQzdc,
+    ._1CSx9,
+    ._39pS- ._2EXPL {
+        box-shadow: inset 0 -1px var(--border-main) !important;
     }
 
-    .headerInfo-expanded,
-    .fx.popover,
-    .fx .popover {
-        box-shadow: 0px 2px 8px var(--background-main), 0px 0px 0px 1px var(--border-main);
+    /* Remove border */
+    ._1CkkN + ._1CkkN ._10xEB,
+    ._1Plpp {
+        border: 0 none !important;
+        outline: 0 none !important;
     }
 
-    body > img,
-    body > div > img,
-    .icon-fx-search-ios-sm-black,
-    .icon-fx-feedly-android-md-black,
-    .fx .form.hercule-search .clear-input .icon,
-    .fx .header .button-icon-only .icon,
-    .fx .header .AllPage__page-button,
-    .icon-toolbar-markasread-secondary,
-    .fx .entry.u0.density-29 .condensed-toolbar-icon,
-    .fx .entry.u0.density-29 .icon-fx-save-to-knowledge-board-ios-md-black,
-    .icon-fx-arrowhead-down-ios-sm-black,
-    .handle.expanded,
-    .icon-fx-cross-ios-sm-black,
-    .fx .chip.chip-deleteable::after,
-    .fx .hide,
-    .icon-fx-save-ios-md-black,
-    .icon-fx-star-save-ios-md-black,
-    .icon-fx-evernote-ios-md-black,
-    .icon-fx-link-ios-md-black,
-    .icon-fx-buffer-ios-md-black,
-    .icon-fx-email-ios-md-black,
-    .icon-fx-hootsuite-ios-md-black,
-    .icon-fx-linkedin-ios-md-black,
-    .icon-fx-twitter-ios-md-black,
-    .icon-fx-wordpress-ios-md-black,
-    .icon-fx-more-ios-md-black,
-    .icon-fx-arrowhead-down-ios-sm-black,
-    .icon-fx-trash-ios-sm-black,
-    .icon-fx-rss-ios-sm-black,
-    .icon-toolbar-refresh-secondary,
-    .handle.expanded,
-    .save-for-later,
-    .fx .search-button,
-    .savedSearchIcon,
-    .headerInfo-expanded-img,
-    .organize--toolbar-actions .icon,
-    .headerInfo-arrow {
-        filter: invert(1) grayscale(1) contrast(.76) !important;
-        opacity: .5
+    ._1CRb5,
+    ._2bdRS,
+    .EebcE {
+        margin: 0 !important;
     }
-    
-    .icon-fx-arrowhead-down-ios-sm-black {
-        filter: invert(0) grayscale(1) !important;
-        opacity: .5 !important;
+
+    ._1CnF3,
+    ._2FsQ8,
+    ._2uLFU {
+        border: 1px solid var(--border-main) !important;
     }
-    
-    .headerInfo-arrow {
-        top:-16px;
+
+    ._1iJeo,
+    ._2bdRS,
+    .EebcE {
+        border-radius: 0 !important;
+    }
+
+    /* Icons */
+    span[data-icon=settings-blocked] path,
+    ._1VfKB span[data-icon=status-check] path,
+    ._1VfKB span[data-icon=status-dblcheck] path,
+    ._3FwEk path,
+    .rrzlm path,
+    .PNqfx path,
+    ._3QWKD path,
+    ._3S8Q- path,
+    ._298R6 path,
+    ._2-IeP path,
+    ._1aTxu path,
+    .C28xL path,
+    ._2SbJ1 path,
+    .ory3u path,
+    ._3kN0h path,
+    ._3SX5f path,
+    ._3ZW2E svg > g path:first-child,
+    .rAUz7 svg > path:first-child {
+        fill: var(--color-secondary) !important;
+        fill-opacity: 1 !important;
+    }
+
+    /* Icons secondary */
+    ._1upWv path,
+    .ySrGA path {
+        fill: var(--color-secondary);
+    }
+
+    ._3ZW2E svg > path:first-child {
+        fill: var(--background-active);
+    }
+
+    /* Icons secondary */
+    .tail.message-in {
+        border-top-left-radius: 7.5px !important;
+    }
+
+    /* Filters */
+    .YUoyu {
+        filter: invert(1);
+        opacity: .05
+    }
+
+    ._3v3PK img {
+        position: relative;
+        filter: blur(20px);
+    }
+
+    .K_Wx2 {
+        top: 48px;
+    }
+
+    svg > path,
+    ._3X-3K hr,
+    ._1iei9 {
         opacity: 1 !important;
+    }
+
+    ._3v3PK::after {
+        display: flex;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        content: 'IMG';
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.35);
+        z-index: 10000000000;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #fff;
     }
 }
