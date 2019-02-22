@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark WhatsApp
 @namespace      github.com/daannorris/dark-themes
-@version        1.0.2
+@version        1.0.3
 @description    Better dark theme for WhatsApp with Compact mode
 @author         @daannorris
 @homepageURL    https://github.com/daannorris/dark-themes
@@ -154,12 +154,14 @@
         background-color: transparent !important;
     }
 
+    /* Set background color primary */
     body,
     #startup,
     #initial_startup,
     .jN-F5,
     .gQzdc,
     .YAPQk,
+    .rstyJ,
     ._1CnF3,
     ._1FKgS,
     ._3dqpi,
@@ -193,14 +195,15 @@
     ._2vjPO,
     ._2FsQ8,
     ._3D9Wd,
-    .rstyJ,
     ._3SX5f,
     ._3XpR2 ._1RQfk,
     ._2y17h,
+    .TYhk9,
     ._2-IeP._1iei9 {
         background-color: var(--background-main) !important;
     }
 
+    /* Set background color secondary */
     ._14b5J,
     .zl5TR,
     ._28zBA._14ou2,
@@ -211,6 +214,7 @@
         background-color: var(--background-hover) !important;
     }
 
+    /* Set background color active */
     progress,
     .message-in,
     .message-out,
@@ -218,17 +222,20 @@
     ._298R6,
     ._2-IeP,
     ._3S8Q-,
+    ._1sB6s,
     .rAUz7._31byH,
     .rAUz7._3TbsN,
     ._2EXPL._1f1zm {
         background-color: var(--background-active) !important;
     }
 
+    /* Set background color principal */
     ._1FroB,
     ._1VD7W {
         background-color: var(--color-wa) !important;
     }
 
+    /* Set background color translucent */
     ._3_R6X,
     ._3gUiM {
         background-color: rgba(30, 30, 30, .9) !important;
@@ -238,11 +245,13 @@
         background-color: #474226 !important;
     }
 
+    /* Set background color gradient */
     ._1i1U7.jZ4tp,
     ._1i1U7._2DNgV {
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(53, 53, 53, .5) 50%) !important;
     }
 
+    /* Set font color primary */
     select,
     .message-out a,
     .AhLfF,
@@ -250,6 +259,8 @@
     .iHhHL,
     .iYPsH,
     .GclUX,
+    .cFkAx,
+    .TYhk9,
     ._2Qffr,
     ._16RnB,
     ._2zCDG,
@@ -261,14 +272,17 @@
     ._3zVOv,
     ._16y6t,
     ._3LL06,
-    .cFkAx,
     ._3XrHh,
+    ._3_7SH,
+    ._1sB6s,
+    ._3gkvk,
+    ._2U5s1,
     ._2Mvo8.fyJXn,
-    ._3zb-j strong,
-    ._3_7SH {
+    ._3zb-j strong {
         color: var(--color-main) !important;
     }
 
+    /* Set font color secondary */
     .Y9G3K,
     .KKFom,
     .Cpiae,
@@ -297,6 +311,7 @@
         color: var(--color-secondary) !important;
     }
 
+    /* Set border color for fake borders */
     ._3zFlu {
         background-color: var(--border-main) !important;
     }
@@ -336,7 +351,6 @@
     }
 
     /* Set fake border top */
-    
     .rstyJ,
     ._3XpR2,
     ._3pkkz,
@@ -373,7 +387,9 @@
         outline: 0 none !important;
     }
 
-    ._1CRb5, ._2bdRS, .EebcE {
+    ._1CRb5,
+    ._2bdRS,
+    .EebcE {
         margin: 0 !important;
     }
 
@@ -383,7 +399,9 @@
         border: 1px solid var(--border-main) !important;
     }
 
-    ._1iJeo, ._2bdRS, .EebcE {
+    ._1iJeo,
+    ._2bdRS,
+    .EebcE {
         border-radius: 0 !important;
     }
 
