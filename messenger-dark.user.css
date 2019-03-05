@@ -1,0 +1,245 @@
+/* ==UserStyle==
+@name           Dark Messenger
+@namespace      github.com/daannorris/dark-themes
+@version        1.0.3
+@description    Dark theme for Messenger
+@author         @daannorris
+@homepageURL    https://github.com/daannorris/dark-themes
+@updateURL      https://raw.githubusercontent.com/daannorris/dark-themes/master/messenger-dark.user.css
+==/UserStyle== */
+@-moz-document domain("www.messenger.com") {
+    :root {
+        --background-main: #1e1e1e;
+        --background-hover: #292929;
+        --background-active: #353535;
+        --border-main: rgba(255, 255, 255, .1);
+        --color-main: #cecece;
+        --color-secondary: rgba(255, 255, 255, .6);
+        --color-fb: #09f;
+    }
+
+    html {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        height: 100%;
+        padding: 0;
+        overflow: auto;
+        margin: 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    body,
+    ._4sp8,
+    ._53ij,
+    ._558b ._54ng,
+    ._5r5i ._5r5g,
+    ._59s7 ._5rq-,
+    ._4-u8,
+    ._5r5i,
+    ._4t2a,
+    ._4eby,
+    ._4jgp ._4jgu,
+    ._2y8_ {
+        background-color: var(--background-main) !important;
+    }
+
+    ._1ht1:hover,
+    ._5r8h:hover,
+    ._5l37:hover,
+    ._1liy ._1lj0:hover,
+    ._54ne,
+    ._558b ._54ne ._54nc {
+        background-color: var(--background-hover) !important;
+    }
+
+    ._5iwm ._58al,
+    ._1ht1._1ht2,
+    ._hh7,
+    ._18p0,
+    ._5i_d,
+    ._2f5n,
+    ._5r8a._5r8b,
+    ._1uwz,
+    ._aou,
+    ._2i-c ._54ne ._54nh,
+    ._2i-c ._54ne ._54nc,
+    ._2i-c ._54ne,
+    ._225b {
+        background-color: var(--background-active) !important;
+    }
+
+    ._43by,
+    ._nd_ ._5i_d,
+    ._3i_m ._2f5n {
+        background-color: var(--color-fb) !important;
+    }
+
+    ._hw2 ._53ij {
+        background-color: #000 !important;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ._17w2,
+    ._1ht6,
+    ._3szq,
+    ._2jnv,
+    ._2jnz,
+    ._2jnx,
+    ._2jnx ._30e7 ._5j5f,
+    ._43za,
+    ._4rph ._4rpj,
+    ._364g,
+    ._5iwm ._58al,
+    ._2i-c ._54nf ._54nh,
+    ._hh7,
+    ._hh7 a,
+    ._5i_d .__6k,
+    ._5i_d .__6l,
+    .__6l,
+    ._36zg,
+    ._5r5c ._5rq_,
+    ._5raa,
+    ._5rab,
+    ._558b ._54nc,
+    ._58al,
+    ._2c9i ._19jt,
+    ._4ng2 {
+        color: var(--color-main) !important;
+    }
+
+    ::placeholder,
+    ._1lj0,
+    ._1ht7,
+    ._2b72,
+    .fcg,
+    ._2v6o,
+    ._5eu7,
+    ._497p,
+    ._6krh,
+    ._3eus,
+    ._5uh,
+    ._5i_d .__6m,
+    .__6m,
+    ._1n-e,
+    ._5rac,
+    ._225b,
+    ._6cs7,
+    ._374c,
+    ._2zn2,
+    ._2zn6,
+    ._2y8z,
+    ._4g0h,
+    ._3xcx,
+    ._7bl4 {
+        color: var(--color-secondary) !important;
+    }
+
+    a,
+    ._6ct7,
+    ._6lbn,
+    ._6ct8 {
+        color: var(--color-fb) !important;
+        font-weight: normal;
+    }
+
+    ._nd_ ._hh7,
+    ._nd_ ._hh7 a,
+    ._nd_ .__6k,
+    ._nd_ .__6l,
+    ._hw4 ._hw5,
+    ._3c1o {
+        color: #fff !important;
+    }
+
+    ._3mts .uiScrollableArea.contentAfter:after,
+    ._5r8l .uiScrollableArea.contentAfter:after {
+        background: linear-gradient(rgba(0, 0, 0, .05), var(--background-main));
+    }
+
+    ._2t5t,
+    ._uwa {
+        filter: invert(1);
+    }
+
+    ._53il ._558b + ._53io,
+    ._1r_9 ._53ik ._53io,
+    ._4rv6,
+    ._4ce_ {
+        filter: invert(.882);
+    }
+
+    ._4rv6,
+    ._4ce_ {
+        opacity: .7 !important;
+    }
+
+    ._1r_9 ._53ij {
+        box-shadow: 0 0 0 1px var(--border-main);
+    }
+
+    ._1li-,
+    ._673w,
+    ._4_j5,
+    ._1t2u,
+    ._llj,
+    ._1wc4,
+    ._5r8e,
+    ._37wv,
+    ._5r86,
+    ._4p9w ._36ic,
+    ._36ic,
+    ._4rv3,
+    ._558b ._54ng,
+    ._37wu,
+    ._4-u2,
+    ._4-i0,
+    ._2i-c ._54nf ._54ak,
+    ._4jgt,
+    ._2c9i ._4ebz,
+    ._374b,
+    ._55r,
+    ._2y8y,
+    ._2y8_ {
+        border-color: var(--border-main) !important;
+    }
+
+    .__6j._43kk {
+        border-color: var(--background-active) !important;
+    }
+
+    ._3i_m .__6j._43kk {
+        border-color: var(--color-fb) !important;
+    }
+
+    ._eb3:before {
+        background-color: var(--border-main);
+    }
+
+    ._558b ._54nc {
+        border-color: var(--background-main) !important;
+    }
+
+    ._hh7._6ybn._2f5r {
+        background: none !important;
+    }
+
+    ._5i_d {
+        border: 0 none;
+    }
+
+    ._4eby,
+    ._4t2a,
+    ._59s7 {
+        border-radius: 6px;
+    }
+}

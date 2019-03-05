@@ -10,10 +10,13 @@ Dark themes for sites that I use, feel free to use them or raise issues if you f
 - Hidden images for privacy
 - Automatic updates
 
+## Messenger Dark
+
+📦 [Install](https://raw.githubusercontent.com/daannorris/dark-themes/master/messenger-dark.user.css)
+
 ## Feedly Dark
 
 ![Screenshot](https://raw.githubusercontent.com/daannorris/dark-themes/master/images/feedly-preview.png)
-
 📦 [Install](https://raw.githubusercontent.com/daannorris/dark-themes/master/feedly-dark.user.css)
 - Main page
 - Login 
